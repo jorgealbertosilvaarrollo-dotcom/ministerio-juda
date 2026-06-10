@@ -33,28 +33,15 @@
   "reuniones": {
     "proxima": {
       "fecha": "2026-06-13",
-      "hora": "4:00 PM",
+      "hora": "5:00 PM",
       "lugar": "Templo Odres Nuevos",
       "tema": "Jóvenes con Propósito",
-      "actividad": "Alabanza + Palabra + Dinámica",
+      "actividad": "Palabra + Dinámica",
       "lider": "Jorge"
     }
   },
 
-  "anuncios": [
-    {
-      "titulo": "Retiro de Jóvenes",
-      "fecha": "Próximamente",
-      "mensaje": "Estamos organizando el retiro juvenil. ¡Más información pronto!",
-      "importante": true
-    },
-    {
-      "titulo": "Ensayo de Alabanza",
-      "fecha": "Cada jueves 6pm",
-      "mensaje": "Todos los que sirven en alabanza, ensayo general los jueves en el templo.",
-      "importante": false
-    }
-  ],
+  "anuncios": [],
 
   "ujieres": [
     {
