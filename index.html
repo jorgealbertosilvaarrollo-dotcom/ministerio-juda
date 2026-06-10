@@ -8,7 +8,15 @@
   <title>Ministerio Jóvenes</title>
   <link rel="manifest" href="./manifest.json">
   <link rel="stylesheet" href="./style.css">
-  <!-- ONESIGNAL: Pega aqui el codigo de OneSignal (ver README.txt paso a paso) -->
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(function(OneSignal) {
+      OneSignal.init({
+        appId: "cf088753-49b5-4731-8a09-5f14302698f2",
+      });
+    });
+  </script>
 </head>
 <body>
 
@@ -82,12 +90,9 @@
 
   <script src="./app.js"></script>
   <script>
-    // Registrar service worker para notificaciones push
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./service-worker.js')
-          .then(() => console.log('Service Worker registrado'))
-          .catch(() => {});
+        navigator.serviceWorker.register('./service-worker.js').catch(() => {});
       });
     }
   </script>
