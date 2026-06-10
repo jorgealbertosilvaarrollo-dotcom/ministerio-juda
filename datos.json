@@ -1,0 +1,100 @@
+{
+  "iglesia": "Odres Nuevos",
+  "ministerio": "Ministerio Juvenil Judá",
+
+  "versiculos": [
+    {
+      "fecha": "2026-06-10",
+      "referencia": "Jeremías 29:11",
+      "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis."
+    },
+    {
+      "fecha": "2026-06-11",
+      "referencia": "Filipenses 4:13",
+      "texto": "Todo lo puedo en Cristo que me fortalece."
+    },
+    {
+      "fecha": "2026-06-12",
+      "referencia": "Isaías 40:31",
+      "texto": "Pero los que esperan a Jehová tendrán nuevas fuerzas; levantarán alas como las águilas; correrán, y no se cansarán; caminarán, y no se fatigarán."
+    },
+    {
+      "fecha": "2026-06-13",
+      "referencia": "Salmos 133:1",
+      "texto": "¡Mirad cuán bueno y cuán delicioso es habitar los hermanos juntos en armonía!"
+    },
+    {
+      "fecha": "2026-06-14",
+      "referencia": "Josué 1:9",
+      "texto": "Mira que te mando que te esfuerces y seas valiente; no temas ni desmayes, porque Jehová tu Dios estará contigo en dondequiera que vayas."
+    }
+  ],
+
+  "reuniones": {
+    "proxima": {
+      "fecha": "2026-06-13",
+      "hora": "4:00 PM",
+      "lugar": "Templo Odres Nuevos",
+      "tema": "Jóvenes con Propósito",
+      "actividad": "Alabanza + Palabra + Dinámica",
+      "lider": "Jorge"
+    }
+  },
+
+  "anuncios": [
+    {
+      "titulo": "Retiro de Jóvenes",
+      "fecha": "Próximamente",
+      "mensaje": "Estamos organizando el retiro juvenil. ¡Más información pronto!",
+      "importante": true
+    },
+    {
+      "titulo": "Ensayo de Alabanza",
+      "fecha": "Cada jueves 6pm",
+      "mensaje": "Todos los que sirven en alabanza, ensayo general los jueves en el templo.",
+      "importante": false
+    }
+  ],
+
+  "ujieres": [
+    {
+      "fecha": "2026-06-13",
+      "nombres": ["Jhesimiel", "Maida"]
+    },
+    {
+      "fecha": "2026-06-20",
+      "nombres": ["Micaela", "Alexandra"]
+    },
+    {
+      "fecha": "2026-06-27",
+      "nombres": ["Ariana", "Ayelen"]
+    },
+    {
+      "fecha": "2026-07-04",
+      "nombres": ["Jhesimiel", "Micaela"]
+    }
+  ],
+
+  "equipo": [
+    {
+      "nombre": "Jorge",
+      "rol": "Líder General",
+      "telefono": ""
+    },
+    {
+      "nombre": "Isabella",
+      "rol": "Líder General",
+      "telefono": ""
+    },
+    {
+      "nombre": "Carolayne",
+      "rol": "Líder General",
+      "telefono": ""
+    },
+    {
+      "nombre": "Sara",
+      "rol": "Vocera",
+      "telefono": ""
+    }
+  ]
+}
