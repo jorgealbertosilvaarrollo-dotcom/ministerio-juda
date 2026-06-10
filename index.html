@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#6C63FF">
+  <meta name="description" content="App del Ministerio de Jóvenes">
+  <title>Ministerio Jóvenes</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./style.css">
+  <!-- ONESIGNAL: Pega aqui el codigo de OneSignal (ver README.txt paso a paso) -->
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="app-header">
+    <h1>🦁 Ministerio Judá</h1>
+    <p id="header-iglesia">Odres Nuevos</p>
+  </header>
+
+  <!-- PAGES -->
+  <div id="app">
+
+    <!-- INICIO -->
+    <section id="page-inicio" class="page active">
+      <div class="page-content">
+        <div class="card card-highlight verse-card">
+          <div class="section-title"><span class="icon">📖</span> Versículo del Día</div>
+          <div class="verse-text" id="versiculo-texto"></div>
+          <div class="verse-ref" id="versiculo-ref"></div>
+        </div>
+        <div id="versiculo-container"></div>
+        <div id="reuniones-container"></div>
+      </div>
+    </section>
+
+    <!-- UJIERS -->
+    <section id="page-ujieres" class="page">
+      <div class="page-content">
+        <div id="ujieres-container"></div>
+      </div>
+    </section>
+
+    <!-- ANUNCIOS -->
+    <section id="page-anuncios" class="page">
+      <div class="page-content">
+        <div id="anuncios-container"></div>
+      </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section id="page-equipo" class="page">
+      <div class="page-content">
+        <div id="equipo-container"></div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <nav class="bottom-nav">
+    <button class="nav-item active" data-page="page-inicio">
+      <span class="nav-icon">📖</span>
+      <span>Inicio</span>
+    </button>
+    <button class="nav-item" data-page="page-ujieres">
+      <span class="nav-icon">🙏</span>
+      <span>Ujieres</span>
+    </button>
+    <button class="nav-item" data-page="page-anuncios">
+      <span class="nav-icon">📢</span>
+      <span>Anuncios</span>
+    </button>
+    <button class="nav-item" data-page="page-equipo">
+      <span class="nav-icon">👥</span>
+      <span>Equipo</span>
+    </button>
+  </nav>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast"></div>
+
+  <script src="./app.js"></script>
+  <script>
+    // Registrar service worker para notificaciones push
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js')
+          .then(() => console.log('Service Worker registrado'))
+          .catch(() => {});
+      });
+    }
+  </script>
+
+</body>
+</html>
